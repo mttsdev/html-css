@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = childrem
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkgreen;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: green;
+        }
+        
+        .eu {
+            background-color:aquamarine ;
+        }
+        a::before {
+            content: ' ✯';
+        }
+
+        a::after {
+            content: ' ✯';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://g1.globo.com/economia/noticia/2025/05/15/dolar-ibovespa.ghtml">Ibovespa fecha aos 139 mil pontos pela primeira vez e bate novo recorde; dólar fecha a R$ 5,67</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo">Canal do Youtube</a></li>
+        <li><a href="https://www.instagram.com/m4rquito.sds/" class="eu">Instagram</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, py, pc
+            
+            Medidas Relativas
+            em, ex, rem, VW, vH, %
+            
+            Recomendado usar px e em
+
+            16px geralmente = 1em
+            */
+            font-size: 1em ;
+
+            /* lighter normal bold bolder*/
+
+        }
+
+        h1{
+
+            /*shorthand font
+
+            - font- style -> font-weight -> font-size -> font-family 
+            
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+
+             font: italic bolder 3em "Work Sans", sans-serif;
+           
+        }
+
+        h2{
+            font: bold 2em "Work Sans";
+        }
+    </style>
+</head>
+<body">
+    <h1>Trabalhando em Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rerum accusantium voluptas illum inventore esse ex. Officia vitae non vero laborum, esse consequuntur dignissimos! Iusto minima animi eius facilis alias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt tempora iusto temporibus. Saepe deleniti ea, adipisci ducimus laudantium debitis distinctio cum blanditiis aperiam deserunt corrupti cupiditate quibusdam incidunt voluptatem totam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quod sequi nobis architecto eos hic ipsum quis alias, impedit pariatur facere mollitia, voluptas omnis accusantium aliquid eligendi earum quam asperiores.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt tempora iusto temporibus. Saepe deleniti ea, adipisci ducimus laudantium debitis distinctio cum blanditiis aperiam deserunt corrupti cupiditate quibusdam incidunt voluptatem totam!</p>
+</body>
+</html>

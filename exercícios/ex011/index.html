@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador.</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudios</h1> 
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/Above The Clouds - Jeremy Black.mp3" controls autoplay></audio>
+    <!--MP3 - WAV - OGG-->
+    <audio preload="auto" autoplay controls loop>
+    <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+    <source src="midia/guanacast-33.ogg" type="audio/ogg">
+    <source src="midia/guanacast-33.wav" type="audio/wav">
+    <!--EM ÁUDIO, O PRELOAD AUTO CONSIDERA QUE O SITE SÓ TERMINOU DE CARREGAR QUANDO BAIXAR TUDO, E O GUANACAST TEM 32 MB, EVITE-O PARA ARQUIVOS GRANDES.
+    METADATA CARREGA APENAS OS NOMES DO ARQUIVO, DURAÇÃO.
+    NONE NÃO CARREGA NADA-->
+    <!--A ORDEM É MUITO IMPORTANTE, ISTO É, SE ELE NÃO CONSEGUIR BAIXAR O MP3, ELE VAI PARA O OGG, E SE NÃO DER CERTO TAMBÉM, VAI PARA O WAV, SEMPRE DE CIMA PARA BAIXO. WAV NÃO É RECOMENDADO PELO SEU ALTO PESO-->
+    <p>Infelizmente seu navegador não consegue reproduzir áudio <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
