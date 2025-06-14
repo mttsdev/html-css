@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem e fundo</title>
+    <style>
+        div.quadrado {
+            display: inline-block; /*Deixou os quadrados um do lado do lado*/
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+        }
+
+        div#q1 {
+            background-color: skyblue;
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+
+        div#q3 {
+            background-image: url('imagens/pattern003.png');
+            /* Sempre coloque url('caminho da imagem'); para colocar a imagem de fundo.
+            OBS: ISSO NÃO POSSUI VALOR SEMÂNTICO! ELE TEM APENAS SENTIDO VISUAL! */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+        
+    </div>
+    <div class="quadrado" id="q2">
+        
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+</body>
+</html>
