@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo Fixo de Tela</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            
+            /*auto: a imagem é aplicada ao tamanho original
+            [length] px ou %: redimensiona a largura e faz a altura se adaptar automaticamente.
+            cover: a imagem é exibida totalmente na tela, sem cortes
+            contain: Redimensiona imagem para que ela cubra o contêiner, mesmo que ocorra eventuais cortes.
+
+            Shorthand - background
+            color > image > position > repeat > [size] > attachment. Veja um exemplo usando as configs acima
+            backgrouns: black url('imagens/wallpaper002.jpg') center center no-repeat cover fixed]
+            
+            OBS: O [SIZE] ESTÁ LISTADO NA REGRA DO W3C, MAS AINDA NÃO PODE SER UTILIZADO! PODE SER UTILIZADA A SHORTHANS, MAS O SIZE AINDA NÃO FUNCIONA*/
+            
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed
+        }
+
+        main {
+            background-color: white;
+            max-width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis non odit nam, fugit vero accusantium dignissimos eius suscipit consequatur aperiam consequuntur dolores, unde officiis explicabo atque vitae molestias necessitatibus labore fugiat eos natus a. Optio, asperiores? Doloremque maiores eveniet autem explicabo quas! Quidem pariatur quibusdam earum inventore porro dolores, aperiam illum consequuntur rem dolorum, minima, repudiandae quia voluptate voluptatum repellat ex sunt veniam aspernatur error? Nesciunt omnis quae pariatur quas, culpa eaque quis distinctio. Quasi eius quod consectetur ipsum aliquam alias, quia laborum, unde atque similique illo adipisci saepe quis? Omnis nulla asperiores enim a facere eveniet sit tempora consequuntur.</p>
+    </main>
+</body>
+</html>
