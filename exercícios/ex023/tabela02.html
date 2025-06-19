@@ -12,11 +12,20 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            background-color: lightgray;
+            padding: 10px;
         }
 
         th {
+            color: white;
             border: 1px solid black;
-            padding: 10px;
+            padding: 15px;
         }
 
         td {
@@ -24,9 +33,26 @@
             padding: 10px;
         }
 
-        thead {
-            background-color: rgb(127, 255, 244);
+        thead > tr > th {
+            position: sticky;
+            top: 0px;
+            background-color: #383838;
+            /*Trava o o th no topo da tela, isso ajuda a pessoa que pode esquecer o que o dado fala.*/
+        }
+
+        thead , tfoot {
+            background-color: #383838;
             color: black;
+        }
+
+        tbody > tr:nth-child(2n)  {
+            /*Aqui a pseudoclasse permite criar o efeito zebrado da tabela.
+            o que significa o n?
+            É a quantidade de linha que vai pular para colocar o bgc. Ex 5n - 4 linhas vão ficar brancas e na quinta fica lightgray. o 2n uma fica cinza e outra branca.
+            
+            odd - impar
+            even - par*/
+            background-color: lightgray;
         }
 
         .num {
@@ -38,8 +64,9 @@
     <h1>Uso de tabelas Grandes</h1>
     <!-- ANATOMIA PARA TABELA GRANDES
      TABLE
+            CAPTION - legenda da tabela
             THEAD
-                TR, TD, TH
+                TR, TD, TH    TR= indica a linha que o o td vai se posicionar   TD= indica o dado  TH= indica o que é uma coluna
             TBODY
                 TR, TD, TH
             TFOOT
@@ -47,10 +74,11 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -164,7 +192,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>212 583 750</strong></td>
             </tr>
         </tfoot>
