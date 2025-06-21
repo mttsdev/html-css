@@ -29,9 +29,62 @@
         th, td {
             padding: 10px;
         }
+
+        .cgrupo {
+            background-color: gray;
+        }
     </style>
 </head>
 <body>
-    
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="3"> <!--use span para usar a configuração em três colunas ou 3 linhas. Nesse caso ele tá indicando a segunda coluna, então a configuração vai pra 2°, 3° e 4° coluna-->
+        </colgroup>
+        <thead>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Cláudio</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>42</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Hélio</td>
+                <td>M</td>
+                <td>19</td>
+                <td>Vendedor</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>39</td>
+                <td>Médica</td>
+            </tr>
+            <tr>
+                <td>Otávio</td>
+                <td>M</td>
+                <td>22</td>
+                <td>Nutricionista</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
