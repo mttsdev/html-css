@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframmes</title>
+    <style>
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    iframe#tela {
+        width: 95vw;
+        height: 400px;
+        border: 2px solid black;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, at enim! Officia sunt illo sed repellat laudantium temporibus amet suscipit illum, odio fuga veritatis consectetur sapiente perspiciatis dolores. 
+        
+    <ul>
+        <li><a href="paginas-extras/pg001.html" target="frame">link 1</a></li>
+        <li><a href="paginas-extras/pg002.html" target="frame002">link 2</a></li>
+        <li><a href="#">link 3</a></li>
+    </ul>
+        
+    Soluta, cupiditate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum accusamus, nesciunt quisquam aliquam repellat vel et est facere excepturi dolore error eius quidem quis odio ullam. Blanditiis doloribus a hic.</p>
+
+    <iframe id="tela" name="frame" src="">
+        <p>Infelizmente seu navegador não é compatível com isso!</p>
+
+        <!-- Nesse exemplo, nomeamos o iframe de "frame", com isso ao clicarmos no link 1 a pg001 vai abrir no iframe, isso por que o target da ancora indica que é para abrir o "frame" -->
+    </iframe>
+
+    <iframe id="tela" name="frame002"></iframe>
+</body>
+</html>
