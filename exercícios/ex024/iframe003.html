@@ -30,12 +30,14 @@
         
     Soluta, cupiditate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum accusamus, nesciunt quisquam aliquam repellat vel et est facere excepturi dolore error eius quidem quis odio ullam. Blanditiis doloribus a hic.</p>
 
-    <iframe id="tela" name="frame" src="">
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis culpa dignissimos cupiditate minus, necessitatibus, mollitia nihil iure rerum hic voluptatum exercitationem aliquid esse iste tenetur voluptas! Repudiandae nemo rem incidunt.</p><img src='imagens/cropped-cursoemvideo-logo.png'>">
         <p>Infelizmente seu navegador não é compatível com isso!</p>
 
         <!-- Nesse exemplo, nomeamos o iframe de "frame", com isso ao clicarmos no link 1 a pg001 vai abrir no iframe, isso por que o target da ancora indica que é para abrir o "frame" -->
-    </iframe>
 
-    <iframe id="tela" name="frame002"></iframe>
+        <!-- Note nos parâmetros que trocamos o src(link ou caminho local) e inserimos o srcdoc, que nos permite digitar dentro do iframe, como se escrevessemos no documento normal-->
+
+        <!--OBS: O SRCDOC USA O "" PARA COLOCAR O DOCUMENTO NO IFRAME. POR ISSO, NÃO SÓ NA IMAGEM ACIMA COMO TODOS OS CÓDIGOS QUE PRECISEM DE ASPAS VAI PASSAR A USAR '' PARA IDENTIFICAR ALGO!-->
+    </iframe>
 </body>
 </html>
