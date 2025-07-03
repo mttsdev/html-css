@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+
+* {
+    padding: 0px;
+    margin: 0;
+}
+
+html {
+    font-family: "Open Sans", Arial, Inter, -apple-system, "system-ui", Roboto, "Helvetica Neue", Helvetica, NotoUbuntu, "Segoe UI", sans-serif;
+}
+
+nav {
+    background-color: #FFFFFF;
+    height: 30px;
+}
+
+nav > a {
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header > nav > a.a1 {
+    color: #0669DE;
+}
+
+header > nav > a.a2 {
+    color: #C4170C;
+}
+
+header > nav > a.a3 {
+    color: #06AA48;
+}
+
+header > nav > a.a4 {
+    color: #FF6700;
+}
+
+header > nav > a.a5 {
+    color: #FB0334;
+}
+
+header > nav > a.a6 {
+    color: #C4170C;
+}
+
+header > nav > a.a7 {
+    color: #1E4C9A;
+}
+
+header > nav > a.a8 {
+    color: #006767;
+}
+
+header > h1 {
+
+    margin: 10 0px 0px 0px;
+    background-color: #0F335F;
+    color: white;
+    text-align: center;
+    height: 80px;
+}
+
+header > h1 > a {
+    position: absolute;
+    left: 450px;
+    top: 50px;
+    height: 80px;
+    text-decoration: none;
+    color: white;
+}
+
+header h1 input {
+    position: absolute;
+    right: 80px;
+    bottom: 838px;
+}
+
+header > h1 > a {
+    
+}
