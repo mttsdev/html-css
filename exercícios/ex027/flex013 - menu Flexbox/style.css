@@ -16,6 +16,38 @@ header {
     background-color: gray;
     color: white;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+header > h1 {
+    border: 1px dotted black;
+    flex: 0 0 200px;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    border: 1px dotted black;
+}
+
+nav > a {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+nav > a:hover {
+    background-color: #fff;
+    color: #000;
+    transition: background-color .3s;
 }
 
 main {
